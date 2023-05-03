@@ -1,6 +1,6 @@
 const team =[
     {
-        name: 'Wayne Barnett', role: 'Founder & CEO',  image: 'walter-barnett-founder-ceo.jpg', 
+        name: 'Wayne Barnett', role: 'Founder & CEO',  image: 'wayne-barnett-founder-ceo.jpg', 
     },
     {   
         name: 'Angela Carrol', role: 'Chief editor',  image: 'angela-caroll-chief-editor.jpg', 
@@ -26,7 +26,8 @@ for (let i = 0; i < team.length; i++) {
     console.log(teamMember);
     
     const element = document.getElementById("teamContent");
-    const contentElement = `<div>Il membro ${teamMember.name} lavora come ${teamMember['role']}, immagine: ${teamMember.image}</div>`;
+    const imgTag = `<img src ="./img/${teamMember.image}" />`;
+    const contentElement = `<div>Il membro ${teamMember.name} lavora come ${teamMember['role']}, <br> ${imgTag}</div>`;
 
-    element.innerHTML = contentElement;
+    element.innerHTML += contentElement;
 }
