@@ -23,6 +23,10 @@ console.log("Array team",team);
 
 for (let i = 0; i < team.length; i++) {
     const teamMember = team[i];
-    console.log(teamMember)
+    console.log(teamMember);
     
+    const element = document.getElementById("teamContent");
+    const contentElement = `<div>Il membro ${teamMember.name} lavora come ${teamMember['role']}, immagine: ${teamMember.image}</div>`;
+
+    element.innerHTML = contentElement;
 }
