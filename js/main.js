@@ -20,3 +20,9 @@ const team =[
 ];
 
 console.log("Array team",team);
+
+for (let i = 0; i < team.length; i++) {
+    const teamMember = team[i];
+    console.log(teamMember)
+    
+}
